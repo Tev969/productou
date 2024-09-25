@@ -1,4 +1,7 @@
 ---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro'
+import Header from '../components/Header.astro';
 const pageTitle = "Nos producteurs";
 const identity = {
   firstName: "Sarah",
@@ -19,9 +22,7 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Rédaction de do
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/productou">Accueil</a>
-    <a href="/productou/nosProducteurs/">À propos</a>
-    <a href="/productou/blog/">Blog</a>
+   <Header/>
     <h1>{pageTitle}</h1>
     <h2>... et de mon nouveau site Astro !</h2>
 
