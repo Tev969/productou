@@ -5,8 +5,40 @@ import BaseLayout from './BaseLayout.astro';
 ---
 <BaseLayout pageTitle={frontmatter.title}>
 
-  <p><em>{frontmatter.description}</em></p>
-  <p>Écrit par : {frontmatter.author}</p>
-  <img src={frontmatter.image.url} width="200" alt={frontmatter.image.alt} />
-  <slot />
+  
+  <!-- <div class="card bg-glass-100 w-96 shadow-xl">
+    <figure class="px-10 pt-10">
+        <img  src={frontmatter.image.url} width="450" alt={frontmatter.image.alt} alt="car!" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">{frontmatter.name}</h2>
+      <p>Nous retrouver !<br> {frontmatter.adress}</p>
+      <p>Nous Contacter !<br> {frontmatter.phoneNumber}</p>
+      <div class="card-actions">
+        <button class="btn btn-primary">Gallerie photos</button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="card bg-base-100 w-96 shadow-xl">
+    <figure>
+        <img  src={frontmatter.image.url} width="450" alt={frontmatter.image.alt} alt="car!" />
+    </figure>
+    <div class="card-body">
+        <h2 class="card-title font-mono ">{frontmatter.name}</h2>
+        <p class="font-mono text-sm font-bold">Nous retrouver ! </p>
+        <p>{frontmatter.adress}</p>
+      <p class="font-mono text-sm font-bold">Nous Contacter ! </p>
+      <p>{frontmatter.phoneNumber}</p>
+      <div class="card-actions justify-star">
+        <div class="badge badge-outline">{frontmatter.speciality1}</div>
+        <div class="badge badge-outline">{frontmatter.speciality2}</div>
+        <br>
+        <div class="card-actions pl-5 items-baseline ">
+            <button class="btn btn-primary " >Gallerie photos</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
 </BaseLayout>

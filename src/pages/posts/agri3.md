@@ -7,6 +7,8 @@ phoneNumber: '06 09 63 21 30'
 image:
     url: 'https://lh3.googleusercontent.com/p/AF1QipPvyvZHI8AlKuzQODSZ5_F0YcM0T9okMhQydWvO=s1360-w1360-h1020'
     alt: "Photo du menu de Martino"
+speciality1: "Fleurs"
+speciality2: "Fruits rouges"
 tags: [""]
 ---
 
